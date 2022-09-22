@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Week 4 Notes</title>
+    </head>
+    <body>
+        <h1>Food Order Form</h1>
+        <form method="post" action=""> <!--method will usually be post for this class-->
+            <label for="fullname">Name:</label> <!--for value must match id value-->
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="specialinstructions">Special Instructions:</label>
+            <textarea id="specialinstructions" name="specialinstructions"></textarea> <br>
+            <label for="delivery">Delivery</label>
+            <input type="radio" id="delivery" name="deliverypickup" value="delivery">
+            <label for="pickup">Pickup</label>
+            <input type="radio" id="pickup" name="deliverypickup" value="pickup" checked><br>
+            <label for="plastic">Do you need plastic utensils?</label>
+            <input type="checkbox" id="plastic" name="plastic" value="yes"><br>
+            <label>What region?</label>
+            <select id="region" name="region">
+                <option value="westcott">Wescott</option>
+                <option value="downtown">Downtown</option>
+                <option value="eastwood">Eastwood</option>
+                <option value="oak street">Oak Street</option>
+            </select><br>
+            <input type="submit" value="send my form"> <!--will not work without an action attribute at beginning of body-->
+        
+        
+        </form>
+
+
+    </body>

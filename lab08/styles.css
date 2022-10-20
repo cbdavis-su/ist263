@@ -1,0 +1,19 @@
+body {
+    font-family: Georgia, serif;
+    color: #3BACB6;
+    background-color:rgb(232, 252, 255);
+  }
+h1 {
+  color:#2F8F9D;
+}
+nav {
+  background-color:#82DBD8;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+nav a {
+  color:#ffffff;
+}
+nav a:hover {
+  background-color: #3BACB6;
+}

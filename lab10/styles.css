@@ -1,13 +1,13 @@
 body {
     font-family: Georgia, serif;
-    color: #3BACB6;
+    color: #ff29cd;
     background-color:rgb(255, 255, 255);
   }
 h1 {
-  color:#2F8F9D;
+  color:#e400af;
 }
 nav {
-  background-color:#82DBD8;
+  background-color:#ffb1ed;
   padding: 10px;
   margin-bottom: 30px;
 }
@@ -15,7 +15,7 @@ nav a {
   color:#ffffff;
 }
 nav a:hover {
-  background-color: #3BACB6;
+  background-color: #b63b9b;
 }
 
 @media only screen and (max-width: 600px){

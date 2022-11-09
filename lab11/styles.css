@@ -16,14 +16,14 @@ nav {
   margin-bottom: 30px;
 }
 nav a {
-  color:#ffffff;
+  color:black;
 }
 nav a:hover {
-  background-color: black;
+  background-color:white;
 }
 
 span{
-  color:white;
+  color:black;
 }
 
 @media only screen and (max-width: 600px){

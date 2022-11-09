@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Lecture Notes</title>
+    <style>
+      .skip{
+        background-color: #ffa500;
+        padding: 5px;
+        border: 1px solid black;
+        position: absolute; 
+        top: 30px;
+        left: -999px;   /*always do 999px to push skip to content off screen. bring it back with a pseudo class*/    
+      }  
+      .skip:focus {     /*focus is a psuedo class that means the element has been tabbed to */
+        left:10px;
+      }
+    </style>
+</head>
+<body>
+    <a href="#content" class="skip"> Skip to Content</a><br> <!-- # = id tag... Look for an element with an ID of content, id uniquely identifies something on page, class can be used over and over again -->
+    <a href="http://www.syr.edu" tabindex="3">SU</a> <br>
+    <a href="http://www.googe.com" tabindex="2">Google</a> <br>
+    <a href="http://www.amazon.com" tabindex="1">Amazon</a> <!--tab # says what order accessibility is browsed in-->
+    <p id="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, molestiae! Delectus at tenetur doloremque magnam nemo. Quasi dolor, mollitia repellat quaerat reiciendis accusamus voluptates obcaecati dolorum fugiat a similique quidem!</p>
+
+</body>
+</html>
+

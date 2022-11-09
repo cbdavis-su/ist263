@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skills</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            p, h1{
+                text-align:center; 
+                margin:10px;
+            }
+            .skills, .flexbox2{
+                display:flex;
+            }
+            .column1{
+                flex-basis:75%;
+            }
+            .column2{
+                flex-basis:25%;
+            }
+            div{
+                padding: 5px;
+                margin: 10px;
+            }
+
+            .otherskills{
+                background-color: #fe65da;
+                color:white;
+                border-radius: 1em;
+                padding: 10px;
+                margin: 5px;
+            }
+            .skip{
+                background-color:  #f8d1ef;
+                padding: 5px;
+                border: 1px solid white;
+                position:absolute;
+                top:30px;
+                left: -999px;
+            } 
+
+            .skip:focus {
+                left:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#content" class="skip">Skip to Content</a><br>
+        <nav> 
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="skills.html">Skills</a> <span>|</span>
+            <a href="contact.html">Contact</a> <span>|</span>
+        </nav>
+        <h1>Skills</h1>
+        <p id="content">Throughout my academic career and internship experience, I have gained valuable technical, wrting, and communications skills.</p>
+       
+        <div class="flexbox2">
+            <div class="column1">
+                <div class="skills">
+                    <div class="images">
+                    <img src="../images/photoshop.svg" alt="" width="50"> <br> 
+                    Adobe Photoshop <br>  
+                    </div>
+        
+                    <div class="images"> 
+                        <img src="../images/ap.svg" alt="" width="50"><br> 
+                        AP Style <br> 
+                    </div>
+        
+                    <div class="images">
+                        <img src="../images/css.svg" alt="" width="40"> <br>
+                        CSS <br>  
+                    </div>
+
+                    <div class="images">
+                        <img src="../images/google.svg" alt="" width="50"> <br>
+                        Google Analytics <br>  
+                    </div>
+        
+                    <div class="images">
+                        <img src="../images/html.svg" alt="" width="65"> <br>
+                        HTML <br>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="column2">
+                <aside class="otherskills">
+                    <h2>Other Skills</h2>
+                    Adobe InDesign<br>
+                    Canva<br>
+                    Influencer Intelligence<br>
+                    Lefty<br>
+                    Meltwater<br>
+                </aside>
+            </div>
+        </div>
+
+    </body>

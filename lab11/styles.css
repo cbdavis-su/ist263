@@ -4,10 +4,10 @@ body {
     background-color:rgb(255, 255, 255);
   }
 h1 {
-  color:#e400af;
+  color:#ff3399;
 }
 nav {
-  background-color:#ffb1ed;
+  background-color:#ff99cc;
   padding: 10px;
   margin-bottom: 30px;
 }
@@ -15,7 +15,7 @@ nav a {
   color:#ffffff;
 }
 nav a:hover {
-  background-color: #ffddf8;
+  background-color: #ffcce6;
 }
 
 @media only screen and (max-width: 600px){

@@ -19,7 +19,7 @@ nav a {
   color:#ffffff;
 }
 nav a:hover {
-  background-color: #ffcce6;
+  background-color: black;
 }
 
 @media only screen and (max-width: 600px){

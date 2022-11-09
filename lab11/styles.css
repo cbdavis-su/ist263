@@ -1,13 +1,13 @@
 body {
     font-family: Georgia, serif;
-    color: #ff3399;
+    color:  #ff0080;
     background-color:rgb(255, 255, 255);
   }
 h1 {
-  color:#ff3399;
+  color: #ff0080;
 }
 nav {
-  background-color:#ff99cc;
+  background-color:#ff1a8c;
   padding: 10px;
   margin-bottom: 30px;
 }

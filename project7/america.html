@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>USA</title>
+    <style>
+        .column1,.column2, .column3, .column4{flex-basis:25%;}
+        .flexbox{
+            display: flex;
+            background-color: #00ADB5;
+            color:black;
+            border-radius: 1em;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        
+        .text1{
+            text-align: center;
+            color:#384750;
+            border-radius: 1em;
+            padding: 10px;
+            margin: 20px;  
+        }
+
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        * {
+        box-sizing: border-box;
+        }
+        .column{
+            -ms-flex: 50%; 
+            flex: 50%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 4px;
+        }
+
+        .row:after {
+            display: table;
+            clear: both;
+        }
+        
+        .paragraph {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav> 
+        <a href="index.html">Home</a> <span>|</span>
+        <a href="abroad.html">Abroad</a> <span>|</span>
+        <a href="america.html">USA</a> <span>|</span>
+    </nav>
+
+ <h1>USA</h1>  
+ <section>
+ <p class="text1">I have traveled to 22 of the 50 states. Every state has its landmarks, and I have had the chance to experience and capture these magnificent places.<br> I plan to get to all 50 states in my lifetime and all seven continents. Check out where I've been below!</p>
+
+<div class="flexbox">
+    <div class="column1">
+        Alabama <br>
+        Alaska <br>
+        <del>Arizona</del> <br>
+        Arkansas <br>
+        <del>California</del><br>
+        Colorado <br>
+        <del>Connecticut</del><br>
+        <del>Deleware</del><br>
+        <del>Florida</del><br>
+        <del>Georgia</del><br>
+        Hawaii <br>
+        Idaho <br>
+        <del>Illinois</del><br>
+    </div>
+    <div class="column2">
+        Indiana<br>
+        Iowa<br>
+        Kansas<br>
+        Kentucky<br>
+        <del>Louisiana</del><br>
+        Maine<br>
+        <del>Maryland</del><br>
+        <del>Massachusetts</del><br>
+        <del>Michigan</del><br>
+        <del>Minnesota</del><br>
+        Mississippi<br>
+        Missouri<br>
+        Montana<br>
+    </div>
+    <div class="column3">
+        Nebraska<br>
+       <del>Nevada</del><br>
+        New Hampshire<br>
+        <del>New Jersey</del><br>
+        New Mexico<br>
+        <del>New York</del><br>
+        North Carolina<br>
+        North Dakota<br>
+        <del>Ohio</del><br>
+        Oklahoma<br>
+        Oregon<br>
+        <del>Pennsylvania</del><br>
+        <del>Rhode Island</del><br>
+    </div>
+    <div class="column4">
+        South Carolina<br>
+        <del>South Dakota</del><br>
+        Tennessee<br>
+        <del>Texas</del><br>
+        <del>Utah</del><br>
+        Vermont<br>
+        <del>Virginia</del><br>
+        Washington<br>
+        West Virginia<br>
+        <del>Wisconsin</del><br>
+        <del>Wyoming</del><br>
+    </div>
+</div>
+</section>
+<br>
+<main>
+<div class="row">
+    <div class="column">
+        <img src="../media/IMG_0938.JPG" alt="Hot Air Balloon" style="width:100%">
+        <p class="paragraph">Scottsdale, Arizona</p>
+
+        <img src="../media/DSC_0884.jpg" alt="Venice" style="width:100%"> 
+        <p class="paragraph">Venice Beach, California</p>
+
+        <img src="../media/547A0C2A-DC9B-46EC-B3F4-03E371E64509.jpg" alt="Louisiana" style="width:100%" >  
+        <p class="paragraph">Vacherie, Louisiana</p>
+        
+        <img src="../media/D82675FB-A003-49E5-9188-C6AE1368B5F5.jpg" alt="Cowboy Hat" style="width:100%">
+        <p class="paragraph">Jacksonhole, Wyoming</p>
+
+        <img src="../media/DSC_0783.jpg" alt="leaf" style="width:100%" >
+        <p class="paragraph">Ann Arbor, Michigan</p>
+
+        <img src="../media/IMG_8659.JPG" alt="Zion" style="width:100%" >
+        <p class="paragraph">Zion National Park</p>
+
+    </div>
+    <div class="column">
+        <img src="../media/F6606B49-94E1-46BA-A6D3-D226C3138C76.jpg" alt="Canyon" style="width:100%" >
+        <p class="paragraph">The Grand Canyon</p>
+
+        <img src="../media/DSC_0599.JPG" alt="Venice" style="width:100%"> 
+        <p class="paragraph">Cincinnati, Ohio</p>
+        
+        <img src="../media/DSC_0909.jpg" alt="Santa Monica" style="width:100%">
+        <p class="paragraph">Santa Monica Pier</p>
+
+        <img src="../media/31F8ACC4-E737-4544-970C-BE888C83516C.jpg" alt="leaf" style="width:100%" >
+        <p class="paragraph">Ann Arbor, Michigan</p>
+        
+        <img src="../media/3A0EB8EE-F065-471E-AA44-2EC3591FACFC.jpg" alt="Park Bench" style="width:100%">
+        <p class="paragraph">New Orleans, Louisiana</p>
+
+        <img src="../media/IMG_8653.jpeg" alt="Trapeze" style="width:100%"> 
+        <p class="paragraph">Scottsdale, Arizona</p>
+
+        
+        <img src="../media/IMG_7744.jpg" alt="Sunset Park" style="width:100%"> 
+        <p class="paragraph">Cedar Point, Ohio</p>
+    </div>
+</div>
+</main>
+
+</body>
+</html>

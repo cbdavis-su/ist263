@@ -8,11 +8,8 @@
     <title>Abroad</title>
     <style>
         #thumbnails {text-align: center; margin: auto; padding-top: 20px;}
-        #londonthumb, #italythumb, #croatiathumb, #greecethumb, #francethumb
-        {width: 100px;} 
-
-        #mainimages {margin-right: 100px;}
-        #country {padding: 100px;}
+        #londonthumb, #italythumb, #croatiathumb, #greecethumb, #francethumb {width: 200px;} 
+        #country {padding: 50px;}
 
         .row{
             display:flex;
@@ -37,9 +34,23 @@
             clear: both;
         }
         
-        .paragraph {
-            text-align: center;
-        }
+    .paragraph {
+        text-align: center;
+    }
+
+    #intro{
+        text-align: center; 
+    }
+    .intro{
+        display: flex;
+        background-color: #023047;
+        color:white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 1em;
+    }
+
+    h1 {text-align: center;}
     </style>
     <script>
         function ImagesOff () {
@@ -85,6 +96,7 @@
             document.getElementById("london3").style.display = "block";
             document.getElementById("london4").style.display = "block";
             document.getElementById("londoninfo").style.display = "block";
+            document.getElementById("intro").style.display = "none";
         }
 
         function ItalyOn (){
@@ -98,6 +110,7 @@
             document.getElementById("italy8").style.display = "block";
             document.getElementById("italy9").style.display = "block";
             document.getElementById("italyinfo").style.display = "block";
+            document.getElementById("intro").style.display = "none";
         }
 
         function CroatiaOn (){
@@ -107,7 +120,8 @@
             document.getElementById("croatia4").style.display = "block";
             document.getElementById("croatia5").style.display = "block";
             document.getElementById("croatia6").style.display = "block";
-            document.getElementById("croatiainfo").style.display = "block";  
+            document.getElementById("croatiainfo").style.display = "block"; 
+            document.getElementById("intro").style.display = "none"; 
         }
 
         function GreeceOn (){
@@ -115,7 +129,8 @@
             document.getElementById("greece2").style.display = "block";
             document.getElementById("greece3").style.display = "block";
             document.getElementById("greece4").style.display = "block";
-            document.getElementById("greeceinfo").style.display = "block";  
+            document.getElementById("greeceinfo").style.display = "block";
+            document.getElementById("intro").style.display = "none";  
         }
 
         function FranceOn (){
@@ -125,81 +140,89 @@
             document.getElementById("paris4").style.display = "block";
             document.getElementById("paris5").style.display = "block";
             document.getElementById("paris6").style.display = "block";
-            document.getElementById("parisinfo").style.display = "block";  
+            document.getElementById("parisinfo").style.display = "block";
+            document.getElementById("intro").style.display = "none";  
         }
     </script>
 </head>
 <body>
+    <a href="#content" class="skip">Skip to Content</a><br>
     <nav> 
         <a href="index.html">Home</a> <span>|</span>
         <a href="abroad.html">Abroad</a> <span>|</span>
         <a href="america.html">USA</a> <span>|</span>
     </nav>
+    <h1>Abroad</h1>
+    <section id="intro">
+        <p class="intro">In the Spring of 2022, I studied abroad in London. I had the opportunity to travel throughout Europe, visiting over ten countries and capturing amazing photographs along the way. These photographs capture the architectural and cultural beauty of Italy, France, London, Croatia, Greece, and more. Check out these places by clicking on each countries' icon. </p>
+    </section>
+
+    <main>
     <div id="slideshow-container">
         <div id="thumbnails">
-            <img src="../media/1.jpg" alt="londonlogo" id="londonthumb" onclick="ImagesOff(); LondonOn();">
-            <img src="../media/2.jpg" alt="italylogo" id="italythumb" onclick="ImagesOff(); ItalyOn();">
-            <img src="../media/3.jpg" alt="croatialogo" id="croatiathumb" onclick="ImagesOff(); CroatiaOn();">
-            <img src="../media/4.jpg" alt="greecelogo" id="greecethumb" onclick="ImagesOff(); GreeceOn();">
-            <img src="../media/5.jpg" alt="francelogo" id="francethumb" onclick="ImagesOff(); FranceOn();"> 
+            <img src="../media/1.png" alt="londonlogo" id="londonthumb" onclick="ImagesOff(); LondonOn();">
+            <img src="../media/2.png" alt="italylogo" id="italythumb" onclick="ImagesOff(); ItalyOn();">
+            <img src="../media/3.png" alt="croatialogo" id="croatiathumb" onclick="ImagesOff(); CroatiaOn();">
+            <img src="../media/4.png" alt="greecelogo" id="greecethumb" onclick="ImagesOff(); GreeceOn();">
+            <img src="../media/5.png" alt="francelogo" id="francethumb" onclick="ImagesOff(); FranceOn();"> 
         </div>
-
         <div id="country">
-            <h1>Country</h1>
+            <h2>Country</h2>
             <div id="londoninfo">
                 <h2>London</h2>
-                <p>In the Spring of 2022, I studied abroad in London. So what do you think of when you hear London? Queen Elizabeth? The Royal Family? The London Bridge? Royal Guards? Here are some snapshots of London’s most timeless landmarks.</p>
-                <p>I had the opportunity to travel throughout Europe, visiting over ten countries and capturing amazing photographs along the way. These photographs capture the architectural and cultural beauty of Italy, France, London, Croatia, Greece, and more. Check out these places by clicking on the country. </p>
+                <p>So what do you think of when you hear London? Queen Elizabeth? The Royal Family? The London Bridge? Royal Guards? Here are some snapshots of London’s most timeless landmarks.</p>
+                
                 <div class="row">
                     <div class="column">
-                        <img src="../media/london.jpg" alt="Big Ben" width="500" id="london1"> <br>
-                        <p class="paragraph">Big Ben</p><br> 
+                        <img src="../media/london.jpg" alt="Big Ben" id="london1" style="width:100%">
+                        <p class="paragraph">Big Ben</p>
                
-                        <img src="../media/london2.jpg" alt="London Eye" width="500" id="london2"> <br> 
-                        <p class="paragraph"> London Eye</p><br>
+                        <img src="../media/london2.jpg" alt="London Eye" id="london2" style="width:100%">  
+                        <p class="paragraph"> London Eye</p>
                     </div>
                     
                     <div class="column">
-                        <img src="../media/london3.jpg" alt="Tower Bridge" width="500" id="london3"> <br>
-                        <p class="paragraph">Tower Bridge</p><br>
+                        <img src="../media/london3.jpg" alt="Tower Bridge" id="london3" style="width:100%"> 
+                        <p class="paragraph">Tower Bridge</p>
 
-                        <img src="../media/london4.jpeg" alt="Westminster Abbey" width="500" id="london4"> <br>
-                        <p class="paragraph">Westminster Abbey</p><br>
+                        <img src="../media/london4.jpeg" alt="Westminster Abbey" id="london4" style="width:100%"> 
+                        <p class="paragraph">Westminster Abbey</p>
                     </div>
                 </div>
             </div>
             
             <div id="italyinfo">
                 <h2>Italy</h2>
+                <p>Italy is the most picturesque country I have seen. Italy has everything from ancient Roman architecture to the colorful island of Burano to the Italian countryside. </p>
                 <div class="row">
                     <div class="column">
-                        <img src="../media/italy.jpg" alt="Siena" width="500" id="italy1"> <br> 
-                        <p class="paragraph">Siena, Italy</p><br>
+                        <img src="../media/italy.jpg" alt="Siena" style="width:100%" id="italy1">  
+                        <p class="paragraph">Siena, Italy</p>
         
-                        <img src="../media/italy1.JPG" alt="Pisa" width="500" id="italy2"><br>
-                        <p class="paragraph">The Leaning Tower of Pisa</p><br>
+                        <img src="../media/italy1.JPG" alt="Pisa" style="width:100%" id="italy2">
+                        <p class="paragraph">The Leaning Tower of Pisa</p>
         
-                        <img src="../media/italy2.JPG" alt="Arno River" width="500" id="italy3"><br>
-                        <p class="paragraph">Arno River in Florence, Italy </p><br>
+                        <img src="../media/italy2.JPG" alt="Arno River" style="width:100%" id="italy3">
+                        <p class="paragraph">Arno River in Florence, Italy </p>
         
-                        <img src="../media/italy3.JPG" alt="Florence" width="500" id="italy4"><br>
+                        <img src="../media/italy3.JPG" alt="Florence" style="width:100%" id="italy4">
                         <p class="paragraph">The Duomo in Florence, Italy</p><br>
                     </div>
                     <div class="column">
-                        <img src="../media/italy4.jpg" alt="Burano" width="500" id="italy5"><br>
-                        <p class="paragraph">The Colorful Island of Burano, Italy </p><br>
+                        <img src="../media/italy4.jpg" alt="Burano" style="width:100%" id="italy5">
+                        <p class="paragraph">The Colorful Island of Burano, Italy </p>
         
-                        <img src="../media/italy5.JPG" alt="Venice" width="500" id="italy6"><br>
-                        <p class="paragraph">Venice, Italy </p> <br>
+                        <img src="../media/italy5.JPG" alt="Venice" style="width:100%" id="italy6">
+                        <p class="paragraph">Venice, Italy </p> 
         
-                        <img src="../media/italy6.JPG" alt="Venice" width="500" id="italy7"><br>
-                        <p class="paragraph">Rome, Italy </p> <br>
+                        <img src="../media/italy6.JPG" alt="Venice" style="width:100%" id="italy7">
+                        <p class="paragraph">Rome, Italy </p> 
         
-                        <img src="../media/italy7.JPG" alt="Venice" width="500" id="italy8"><br>
-                        <p class="paragraph">Rome, Italy </p> <br>
+                        <img src="../media/italy7.JPG" alt="Venice" style="width:100%" id="italy8">
+                        <p class="paragraph">Rome, Italy </p> 
         
-                        <img src="../media/italy8.jpg" alt="Venice" width="500" id="italy9"><br>
-                        <p class="paragraph">Siena, Italy </p> <br>
+                        <img src="../media/italy8.jpg" alt="Venice" style="width:100%" id="italy9">
+                        <p class="paragraph">Siena, Italy </p> 
                     </div>
                 </div>
             </div>
@@ -208,24 +231,24 @@
                 <h2>Dubrovnik, Croatia</h2>
                 <div class="row">
                     <div class="column">
-                        <img src="../media/IMG_4958.JPG" alt="Croatia" width="500" id="croatia1"><br>
-                        <p class="paragraph">The Old Town</p><br>
+                        <img src="../media/IMG_4958.JPG" alt="Croatia" style="width:100%" id="croatia1">
+                        <p class="paragraph">The Old Town</p>
                  
-                        <img src="../media/IMG_5468.JPG" alt="Elaphite" width="500" id="croatia2"><br>
-                        <p class="paragraph">The Elaphite Islands</p> <br>
+                        <img src="../media/IMG_5468.JPG" alt="Elaphite" style="width:100%" id="croatia2">
+                        <p class="paragraph">The Elaphite Islands</p> 
                  
-                        <img src="../media/IMG_5336.JPG" alt="Adriatic" width="500" id="croatia3"><br>
-                        <p class="paragraph">The Adriatic Sea</p> <br>
+                        <img src="../media/IMG_5336.JPG" alt="Adriatic" style="width:100%"id="croatia3">
+                        <p class="paragraph">The Adriatic Sea</p> 
                     </div>
                     <div class="column">
-                        <img src="../media/IMG_5096.JPG" alt="cliffs" width="500" id="croatia4"><br>
-                        <p class="paragraph">Cliffs of Dubrovnik </p><br>
+                        <img src="../media/IMG_5096.JPG" alt="cliffs" style="width:100%" id="croatia4">
+                        <p class="paragraph">Cliffs of Dubrovnik </p>
          
-                        <img src="../media/IMG_5112 2.jpeg" alt="Night" width="500" id="croatia5"><br>
-                        <p class="paragraph">Dubrovnik at Night</p> <br>
+                        <img src="../media/IMG_5112 2.jpeg" alt="Night" style="width:100%" id="croatia5">
+                        <p class="paragraph">Dubrovnik at Night</p> 
          
-                        <img src="../media/IMG_5478.JPG" alt="Homes" width="500" id="croatia6"><br>
-                        <p class="paragraph">Outside the City</p> <br>
+                        <img src="../media/IMG_5478.JPG" alt="Homes" style="width:100%" id="croatia6">
+                        <p class="paragraph">Outside the City</p>
                     </div>
                 </div>
                 
@@ -235,19 +258,19 @@
                 <h2>Greece</h2>
                 <div class="row">
                     <div class="column">
-                        <img src="../media/greece.JPG" alt="mykonos" width="500" id="greece1"><br>
-                        <p class="paragraph">Mykonos, Greece </p><br>
+                        <img src="../media/greece.JPG" alt="mykonos" style="width:100%" id="greece1">
+                        <p class="paragraph">Mykonos, Greece </p>
                     
-                        <img src="../media/greece2.JPG" alt="mykonos" width="500" id="greece2"><br>
-                        <p class="paragraph">Athens, Greece</p><br>
+                        <img src="../media/greece2.JPG" alt="mykonos" style="width:100%" id="greece2">
+                        <p class="paragraph">Athens, Greece</p>
                    
                     </div>
                     <div class="column">
-                        <img src="../media/greece3.JPG" alt="mykonos" width="500" id="greece3"><br>
-                        <p class="paragraph">Old Town of Mykonos</p> <br>
+                        <img src="../media/greece3.JPG" alt="mykonos" width="500" id="greece3">
+                        <p class="paragraph">Old Town of Mykonos</p> 
                  
-                        <img src="../media/greece4.JPG" alt="mykonos" width="500" id="greece4"><br>
-                        <p class="paragraph">Mykonos at Sunset</p> <br>
+                        <img src="../media/greece4.JPG" alt="mykonos" width="500" id="greece4">
+                        <p class="paragraph">Mykonos at Sunset</p> 
                     </div>
                 </div>
             </div>
@@ -256,29 +279,33 @@
                 <h2>Paris, France</h2>
                 <div class="row">
                     <div class="column">
-                        <img src="../media/paris5.jpg" alt="paris" width="500" id="paris1"> <br>
-                        <p class="paragraph">The Eiffel Tower</p><br>
+                        <img src="../media/paris5.jpg" alt="paris" style="width:100%" id="paris1"> 
+                        <p class="paragraph">The Eiffel Tower</p>
            
-                        <img src="../media/paris.jpg" alt="Paris" width="500" id="paris2"><br>
-                        <p class="paragraph">Paris at Night</p> <br>
+                        <img src="../media/paris.jpg" alt="Paris" style="width:100%" id="paris2">
+                        <p class="paragraph">Paris at Night</p> 
            
-                        <img src="../media/paris1.jpg" alt="paris" width="500" id="paris3"> <br>
-                        <p class="paragraph">The Palace of Versailles</p><br>
+                        <img src="../media/paris1.jpg" alt="paris" style="width:100%" id="paris3"> 
+                        <p class="paragraph">The Palace of Versailles</p>
                     </div>
                     <div class="column">
-                        <img src="../media/paris2.jpg" alt="paris" width="500" id="paris4"> <br>
-                        <p class="paragraph">The Louvre</p> <br>
+                        <img src="../media/paris2.jpg" alt="paris" style="width:100%" id="paris4"> 
+                        <p class="paragraph">The Louvre</p> 
         
-                        <img src="../media/paris3.jpg" alt="paris" width="500" id="paris5"> <br>
-                        <p class="paragraph">The Louvre</p> <br><br>
+                        <img src="../media/paris3.jpg" alt="paris" style="width:100%" id="paris5"> 
+                        <p class="paragraph">The Louvre</p> 
         
-                        <img src="../media/paris4.jpg" alt="paris" width="500" id="paris6"> <br>
-                        <p class="paragraph">The Eiffel Tower</p> <br>
+                        <img src="../media/paris4.jpg" alt="paris" style="width:100%" id="paris6"> 
+                        <p class="paragraph">The Eiffel Tower</p> 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    </main>
+    <footer>
+        <hr>
+        <p class="copy"> &copy;2020 </p> 
+    </footer>
 </body>
 </html>

@@ -1,28 +1,41 @@
 body {
-    font-family: Georgia, serif;
-    color: black;
-    background-color:#F0F7EE;
+    font-family: 'Noto Sans', sans-serif;
+    color: #023047;
+    background-color:#faf7f0;
   }
 h1, h2 {
-  color:black;
+  color:#023047;
 }
 nav {
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 nav a {
-  color:black;
+  color:#023047;
 }
 nav a:hover {
   background-color:white;
 }
 
 p{
-  color:black;
+  color:#023047;
 }
 
 span{
-  color:black;
+  color:#023047
+}
+
+.skip{
+  background-color:#faf7f0;
+  padding: 5px;
+  border: 1px solid black;
+  position:absolute;
+  top:30px;
+  left: -999px;
+} 
+
+.skip:focus {
+  left:10px;
 }
 
 @media only screen and (max-width: 600px){

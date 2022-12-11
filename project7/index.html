@@ -8,30 +8,81 @@
         <title>Home</title>
         <style>
             #header {text-align: center;}
-            .about {display:flex;}
+            .about {display:flex; background-color:#023047;}
             .headshot {padding: 15px; margin: 10px;}
             .aboutme{padding: 15px; margin: 20px;}
-
-            .images{
-                clear: both;
+            .row {
                 display: flex;
-                flex:wrap;
             }
+
+            .column {
+                flex: 33.33%;
+                padding: 5px;
+            }
+
+            footer{
+                clear:both;
+            }
+
+            .img{width:100%; height:400px;}
+
+            p,h2,ul {color:white;}
+
         </style>
     </head>
     <body>
         <header>
-        <a href="#content" class="skip">Skip to Content</a><br>
-        <nav> 
+         <a href="#content" class="skip">Skip to Content</a><br>
+         <nav> 
             <a href="index.html">Home</a> <span>|</span>
             <a href="abroad.html">Abroad</a> <span>|</span>
             <a href="america.html">USA</a> <span>|</span>
-        </nav>
+         </nav>
         </header>
         
-         <h1 id="header"> Chloe Davis Photography</h1>
+        <h1 id="header"> Chloe Davis Photography</h1>
+    <section>
+        <div class="row">
+            <div class="column">
+                <a target="_blank" href="abroad.html">
+                  <img src=../media/IZVME0009.jpg alt="Paris" class="img">
+                </a>
+            </div>
+              
+            <div class="column">
+                <a target="_blank" href="abroad.html">
+                  <img src="../media/amsterdam.jpg" alt="Amsterdam" class="img">
+                </a>
+            </div>
 
-        <section>
+            <div class="column">
+                <a target="_blank" href="america.html">
+                  <img src="../media/F6606B49-94E1-46BA-A6D3-D226C3138C76.jpg" alt="America" class="img">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a target="_blank" href="abroad.html">
+                  <img src=../media/italy.jpg alt="Italy" class="img">
+                </a>
+            </div>
+              
+            <div class="column">
+                <a target="_blank" href="abroad.html">
+                  <img src="../media/greece4.jpg" alt="Greece" class="img">
+                </a>
+            </div>
+
+            <div class="column">
+                <a target="_blank" href="america.html">
+                  <img src="../media/DSC_0884.jpg" alt="Venice Beach" class="img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
         <div class="about">
             <div class="headshot">
                 <img src="../media/headshot.jpg" alt="selfie">
@@ -44,36 +95,23 @@
                 <p>I recently studied abroad in London and traveled throughout Europe, visiting over ten countries and capturing amazing photographs.</p>
                 <h2>Travel Destinations:</h2>
                     <ul>
-                    <li>Belgium</li>
-                    <li>Croatia</li>
-                    <li>Czech Republic</li>
-                    <li>France</li>
-                    <li>Greece</li>
-                    <li>Ireland</li>
-                    <li>Italy</li>
-                    <li>Scotland</li>
-                    <li>Spain</li>
-                    <li>The Netherlands</li>
-                     </ul>
-            </div>
-           
+                        <li>Belgium</li>
+                        <li>Croatia</li>
+                        <li>Czech Republic</li>
+                        <li>France</li>
+                        <li>Greece</li>
+                        <li>Ireland</li>
+                        <li>Italy</li>
+                        <li>Scotland</li>
+                        <li>Spain</li>
+                        <li>The Netherlands</li>
+                    </ul>
+            </div>  
         </div>    
-        </section>
-        <section>
-        <div class="images">
-            <div>
-                <img src="../media/IMG_0938.JPG" alt="airballoon">
-            </div>
-            <div>
-                <img src="../media/amsterdam.jpg" alt="Amsterdam">
-                <img src="../media/DSC_0781.jpg" alt="flower">
-            </div>
-            <div>
-        </div>
-        </section>
+    </section>
         <footer>
             <hr>
-            <p class="copy"> &copy;2020 </p> 
+            &copy;2020
         </footer>
     </body>
 </html>

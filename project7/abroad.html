@@ -54,7 +54,19 @@
     h1 {text-align: center;}
 
     img{width: 100%;}
+
+    .intro {
+        animation: fadeIn 5s;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+
     </style>
+
     <script>
         function ImagesOff () {
             document.getElementById("london1").style.display = "none";

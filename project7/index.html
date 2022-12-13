@@ -38,12 +38,7 @@
                     width: 100%;
                 }
             }
-
-            @keyframes fadeIn {
-                0% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-
+            
             .img{width:100%;}
 
             .aboutme {
@@ -75,6 +70,16 @@
             @media (max-width: 1000px) {
                 .aboutme {flex-direction: column;}
             }
+
+            .text {
+                animation: fadeIn 5s;
+            }
+
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+
         </style>
     </head>
     <body>
